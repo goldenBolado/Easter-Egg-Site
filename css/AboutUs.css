@@ -52,3 +52,19 @@ a{
     background-color: #444;
     color: white;
 }
+
+p{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.principal{
+    margin: 40px;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
