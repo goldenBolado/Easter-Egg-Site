@@ -1,0 +1,12 @@
+.principal input{
+    display: block;
+}
+.principal textarea{
+    display: block;
+}
+
+.principal{
+    display: block;
+    grid-row: 1;
+    grid-column: 1;
+}
