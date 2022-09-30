@@ -20,11 +20,6 @@ a{
     text-decoration: none;
 }
 
-.logo{
-    width: 80px;
-    margin-bottom: 30px;
-}
-
 .menu{
     position: fixed;
     width: 100%;
@@ -33,20 +28,45 @@ a{
     justify-content: space-between;
 }
 
+.menu .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.menu .logo img{
+    width: 80px;
+    height: 68px;
+}
+
 .menu li{
     display: inline-block;
 }
 
-.menu a{
+.menu img{
     color: white;
     padding: 8px 12px;
     border-radius: 3px;
     transition: 220ms;
 }
-
-.menu a:hover{
+.menu .opcoes{
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 220ms;
+}
+.menu .opcoes:hover{
     color: #444;
     background-color: white;
+}
+
+.menu img:hover{
+    background-color: transparent;
+    transition: 0.4s;
+    transform: scale(1.1);
 }
 
 p{
@@ -63,20 +83,24 @@ h1{
     margin: 40px;
     justify-content: space-around;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 
+
+/*Daqui pra baixo não precisa mexer (Na teoria)*/
 footer{
     font-family: 'poppins', sans-serif;
     width: 100%;
-    position: absolute;
     bottom: 0;
     background: linear-gradient(to right, rgb(101, 45, 255), rgb(85, 26, 97));
     color: #fff;
-    padding: 5px 0 30px;
+    padding: 10px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 5px;
+    margin-bottom: 100px;
 }
+
 
 .row{
     width: 85%;
@@ -100,7 +124,6 @@ footer{
 
 .email{
     width: fit-content;
-    border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
 
@@ -196,18 +219,4 @@ hr{
     .col:nth-child(2), .col:nth-child(3){
         flex-basis: 100%;
     }
-}
-
-
-.principal input{
-    display: block;
-}
-.principal textarea{
-    display: block;
-}
-
-.principal{
-    display: block;
-    grid-row: 1;
-    grid-column: 1;
 }
