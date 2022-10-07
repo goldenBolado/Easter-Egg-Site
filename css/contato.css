@@ -5,15 +5,34 @@
 }
 
 body{
+    height: 100px;
     width: 100%;
     background-color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment{
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb:vertical{
+	background-color: #666;
+	border-radius: 6px;
 }
 
 header{
     width: 100%;
     height: 10vh; 
-    background: linear-gradient(to right, rgb(101, 45, 255), rgb(85, 26, 97));
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 a{
@@ -26,6 +45,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #FFF;
+    background: linear-gradient(to right, rgb(101, 45, 255), rgb(85, 26, 97));
 }
 
 .menu .logo{
@@ -44,6 +65,7 @@ a{
 
 .menu li{
     display: inline-block;
+    margin-right: 10px;
 }
 
 .menu img{
@@ -70,22 +92,79 @@ a{
 }
 
 p{
-    font-size: 18px;
+    font-size: 19px;
 }
 
 h1{
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .principal{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 40px;
-    justify-content: space-around;
+    margin: 40px auto 30px;
+    font-size: 20px;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
+
+fieldset{
+    border: 0;
+}
+
+fieldset .grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+input, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo textarea{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo input:focus, .campo textarea:focus{
+    background-color: #e0e0f8;
+}
+
+.submit{
+    font-size: 1.2em;
+    background-color: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    margin-right: 70%;
+    transform: translate(70%, 70%);
+}
+
+.submit:hover{
+    background-color: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
 
 /*Daqui pra baixo não precisa mexer (Na teoria)*/
 footer{
@@ -122,49 +201,31 @@ footer{
     position: relative;
 }
 
+.about{
+    margin-left: 100px;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+.contact{
+    margin-left: 67px;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
 .email{
+    font-size: 14px;
     width: fit-content;
     margin: 20px 0;
 }
 
-.formfooter{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
-}
-
-.formfooter .fa-envelope{
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.formfooter input{
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-}
-
-.formfooter button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    
-}
-
-.formfooter button .fa-arrow-right{
-    font-size: 16px;
-    color: #ccc;
-}
-
-.formfooter button:hover{
-    transform: scale(1.4);
-    transition: 0.2s;
+.fone{
+    font-size: 14px;
+    width: fit-content;
+    margin: 20px 0;
+    text-decoration: underline;
 }
 
 hr{
@@ -180,9 +241,9 @@ hr{
 
 .underline{
     width: 100%;
-    height: 5px;
+    height: 3px;
     background: #767676;
-    border-radius: 3px;
+    border-radius: 4px;
     position: absolute;
     top: 25px;
     left: 0;
@@ -193,7 +254,7 @@ hr{
     width: 15px;
     height: 100%;
     background: #FFF;
-    border-radius: 3px;
+    border-radius: 4px;
     position: absolute;
     top: 0;
     left: 10px;
@@ -220,3 +281,4 @@ hr{
         flex-basis: 100%;
     }
 }
+

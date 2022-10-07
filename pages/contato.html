@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/fav_icon.png">
-    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/contato.css">
     <script src="https://kit.fontawesome.com/6ac2f68df6.js"></script>
     <title>Easter Egg dos Games</title>
 </head>
@@ -25,38 +25,64 @@
 </header>
 
 <body>
-    <section class="principal">
-        <form action="#" class = 'form-contact' method = 'post' tabindex="1">
-            Nome:<input type="text" class="form-contact" name="nome"
-            placeholder="Digite seu nome aqui" required>
-            E-mail:<input type="email" class="form-contact" name="email"
-            placeholder="Digite seu e-mail aqui" required>
-            Telefone:<input type="tel" class="form-contact" name="tel"
-            placeholder="Digite seu telefone aqui">
-            Menssagem:<textarea name="texto-area" class='texto-area' placeholder="Deixe sua mensagem" required></textarea>
-            <button type="submit" class="form-contact-button">ENVIAR</button>
-        </form>
-    </section><!--principal-->
+<section class="principal">
+        <h1>Contate-Nos</h1>
+        <br>
+    <p>Coloque suas Informações abaixo e deixe seu FeedBack !</p>
     
+    <br>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label for="feedback" >Deixe aqui seu FeedBack...</label>
+            <textarea rows="10" style="width: 26em;" name="feedback" id="feedback" required></textarea> 
+        </div>
+
+        <button class="submit" type="submit">Enviar</button>
+    </form>
+</section><!--principal-->
 </body>
 
 <footer>
     <div class="row">
         <div class="col">
-            <p>Texto</p>
+            <h3>Quem somos ?<div class="underline"><span></span></div></h3>
+            <p>Saiba mais sobre nós clicando</p>
+            <br>
+            <br>
+            <br>
+            <strong><p><a href="../pages/aboutus.html" class="about">Aqui !</a></p></strong>
         </div>
         <div class="col">
             <h3>Informações <div class="underline"><span></span></div></h3>
-            <p class="email">email</p>
-            <h4>17 99999-9999</h4>
+            <p class="email">pressstart123@gmail.com</p>
+            <p class="fone">17 99163-8236</p>
         </div>
         <div class="col">
             <h3>Contate-nos <div class="underline"><span></span></div></h3>
-        <form class="formfooter">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Insira seu e-mail..." required>
-            <button type="submit"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-        </form>
+            <p>Mande seu FeedBack</p>
+            <br>
+            <br>
+            <br>
+            <strong><p><a href="../pages/contato.html" class="contact">Aqui !</a></p></strong>
         </div>
     </div>
     <hr>
