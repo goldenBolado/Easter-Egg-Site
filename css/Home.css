@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -91,6 +91,11 @@ a{
     transform: scale(1.1);
 }
 
+.menu h2:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
 p{
     font-size: 19px;
 }
@@ -99,28 +104,39 @@ h1{
     font-size: 40px;
 }
 
-.principal{
-    margin: 40px auto 30px;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 600px;
-    justify-content: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+.esquerda h1{
+    margin-right: 30px;
 }
 
-.principal img{
-    padding-left: 38px;
+.esquerda{
+    margin-right: 690px;
+    text-align: center;
 }
 
-.principal .subtitle{
-    padding-left: 30px;
+.esquerda .subtitle{
+    margin-right: 80px;
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
-/*Daqui pra baixo não precisa mexer (Na teoria)*/
+.esquerda .thumb{
+    margin-right: 80px;
+}
+
+.direita{
+    margin-left: 690px;
+    text-align: center;
+}
+
+.principal{
+    margin: 40px auto 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+/*Daqui pra baixo não precisa mexer*/
 footer{
     font-family: 'poppins', sans-serif;
     width: 100%;
