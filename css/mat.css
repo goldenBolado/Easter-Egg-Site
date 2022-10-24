@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100px;
+    height: 100vh;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -104,70 +104,51 @@ h1{
     font-size: 40px;
 }
 
-.principal{
-    margin: 40px auto 30px;
+.main{
+    margin: 40px 15px 40px;
     font-size: 20px;
-    margin-left: 3%;
+    text-align: center;
+    margin-top: 2%;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
-
-fieldset{
-    border: 0;
+.subtitle{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-fieldset .grupo .campo{
-    float: left;
-    margin-right: 1em;
+.mat{
+    margin: 40px 15px 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-input, textarea, button{
-    border-radius: 5px;
+.content{
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 3px #333;
 }
 
-.campo{
-    margin-bottom: 1em;
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.campo label{
-    margin-bottom: 0.2em;
-    color: #59429d;
-    display: block;
-}
-
-.campo input[type="text"], .campo input[type="email"], .campo textarea{
-    padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-}
-
-.campo input:focus, .campo textarea:focus{
-    background-color: #e0e0f8;
-}
-
-.submit{
-    font-size: 1.2em;
-    background-color: #59429d;
-    border: 0;
-    margin-bottom: 1em;
-    color: #FFFFFF;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    position: absolute;
-    top: 80%;
-    left: 22%;
-    margin-right: 70%;
-    transform: translate(70%, 70%);
-}
-
-.submit:hover{
-    background-color: #af96fc;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
+.content:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #333;
+    transform: scale(1.1);
+    transition: transform .2s linear;
 }
 
 /*Daqui pra baixo não precisa mexer*/
@@ -285,4 +266,3 @@ hr{
         flex-basis: 100%;
     }
 }
-
