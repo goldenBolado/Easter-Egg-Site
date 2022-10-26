@@ -7,26 +7,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background-color: whitesmoke;
-}
-
-::-webkit-scrollbar {
-	width: 14px;
-	height: 14px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment{
-	display: none;
-}
-
-::-webkit-scrollbar-track-piece{
-	background-color: #aaaaaa;
-}
-
-::-webkit-scrollbar-thumb:vertical{
-	background-color: #666;
-	border-radius: 6px;
+    background-color: white;
 }
 
 header{
@@ -46,7 +27,7 @@ a{
     align-items: center;
     justify-content: space-between;
     color: #FFF;
-    background: linear-gradient(to right, rgb(101, 45, 255), rgb(85, 26, 97));
+    background: black;
 }
 
 .menu .logo{
@@ -105,7 +86,7 @@ h1{
 }
 
 .main{
-    margin: 40px 15px 40px;
+    margin: 40px 100px 40px;
     font-size: 20px;
     text-align: center;
     margin-top: 2%;
@@ -156,7 +137,7 @@ footer{
     font-family: 'poppins', sans-serif;
     width: 100%;
     bottom: 0;
-    background: linear-gradient(to right, rgb(101, 45, 255), rgb(85, 26, 97));
+    background: black;
     color: #fff;
     padding: 10px 0 30px;
     border-top-left-radius: 125px;
