@@ -83,20 +83,30 @@ p{
 }
 
 h1{
+    text-align: center;
     font-size: 40px;
 }
 
 .main{
-    margin: 40px 100px 40px;
+    flex-wrap: wrap;
+    margin: 0 100px 40px;
     font-size: 20px;
-    text-align: center;
     margin-top: 2%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
+.main h2{
+    font: 36px;
+}
+
+.linha{
+    
+    margin-bottom: 38px;
+}
+
 .content{
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 /*Daqui pra baixo não precisa mexer*/
